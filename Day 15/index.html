@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            /* Element Selector */
+            background-color: red;
+        }  
+        .red{
+            /* Class Selector */
+            background-color: red;
+        }
+
+        #green{
+            /* ID Selector */
+            background-color: green;
+        }
+
+        div > p{
+            /* Child Selector */
+            color: red;
+            background-color: yellow;
+        }
+
+        div p{
+            /* Descendant Selector */
+            color: blue;
+            background-color: yellow;
+        }
+
+        *{
+            /* Universal Selector */
+            margin: 0;
+            padding: 0;
+        }
+        a:visited{
+            /* Visited Selector */
+            color: red;
+        }
+
+        a:link{
+            /* Link Selector */
+            color: purple;
+        }
+        a:active{
+            /* Active Selector */
+            background-color: green;
+        }
+
+        a:hover{
+            /* Hover Selector */
+            background-color: rgb(255, 0, 191);
+        }
+
+        p:first-child{
+            /* First Child Selector */
+            background-color: aqua;
+        }
+
+        </style>
+</head>
+<body>
+    <div class="one">
+        <p>
+            I am akash
+        </p>
+        <p>
+            I am ankit
+        </p>
+
+    </div>
+    <div class="red">
+        I am Raj
+    </div>
+
+    <div id="green">
+        I am Aman
+    </div>
+
+    <div>
+        <p>I am a child of div</p>
+    </div>
+
+    <div>
+        <p>I am a descendant of div</p>
+    </div>
+    <a href="https://www.google2.com" target="_blank">Google</a>
+    <a href="https://www.facebook2.com" target="_blank" class="link">Facebook</a>
+</body>
+</html>
