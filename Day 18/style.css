@@ -1,0 +1,36 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    font-style: italic;
+}
+
+/* Box 1 */
+.box1 {
+    background-color: #3498db;   /* Blue */
+    color: white;                /* White text */
+    border: 3px solid navy;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Box 2 */
+.box2 {
+    background-color: #2ecc71;   /* Green */
+    color: darkred;              /* Dark red text */
+    border: 3px solid green;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Paragraph spacing */
+.box1 p,
+.box2 p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
