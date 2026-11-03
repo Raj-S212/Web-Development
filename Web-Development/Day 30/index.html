@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selector</title>
+    <style>
+
+    /* .box:first-child{
+        background-color: red;
+    } */
+
+    /* .box:first-line{
+        color: yellow;
+    } */
+    
+    /* .boxes *{
+        color: orangered;
+        border: 1px solid black;
+    }
+
+    p ,a, .box ,[data-color="primary"]{
+        padding-top: 45px;
+    } */
+
+    /* .box:nth-child(even){
+        background-color: red;
+    } */
+
+    .boxes::after{
+        content: "I am a before pseudo element";
+        color: red;
+    }
+
+    .boxes::selection{
+        color: white;
+        background-color: red;
+    }
+
+    .box::first-letter{
+        color: red;
+        font-size: 30px;
+    }
+    .input::placeholder{
+        color: rgba(255, 0, 0, 0.39);
+        font-size: 20px;
+    }
+    .input::target-text{
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+    <div data-color="primary" class="box">I am a first box </div>
+    <div class="box">Hey I am a box </div>
+    <div class="box">Hey I am a box </div>
+    <input type="text" name="name" id="name" placeholder="Enter your name">
+    </div>
+</body>
+</html>
